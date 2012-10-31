@@ -3,6 +3,7 @@
 	email = kristian.tryggestad@gmail.com
 [core]
 	editor = vim
+	excludesfile = ~/.gitignore
 [alias]
 	st = status
 	up = log --branches --not --remotes

@@ -14,5 +14,6 @@
     lg = log -p
     who = shortlog -s --
     aliases = config --get-regexp alias
+    slog = log --pretty=oneline --graph --abbrev-commit
 [color]
 	ui = true

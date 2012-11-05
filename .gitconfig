@@ -7,12 +7,12 @@
 [alias]
 	st = status
 	up = log --branches --not --remotes
-        ci = commit
-        br = branch
-        co = checkout
-        df = diff
-        lg = log -p
-        who = shortlog -s --
-	aliases = config --get-regexp alias
+    ci = commit
+    br = branch
+    co = checkout
+    df = diff
+    lg = log -p
+    who = shortlog -s --
+    aliases = config --get-regexp alias
 [color]
 	ui = true

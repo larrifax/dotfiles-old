@@ -18,3 +18,5 @@
 	diffc = diff --cached
 [color]
 	ui = true
+[push]
+	default = simple

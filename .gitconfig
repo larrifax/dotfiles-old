@@ -17,6 +17,7 @@
 	slog = log --pretty=oneline --graph --abbrev-commit
 	diffc = diff --cached
 	stashsome = stash --keep-index
+	conflicted = show --cc
 [color]
 	ui = true
 [push]

@@ -18,6 +18,7 @@
 	diffc = diff --cached
 	stashsome = stash --keep-index
 	conflicted = show --cc
+	mg = merge --no-ff
 [color]
 	ui = true
 [push]

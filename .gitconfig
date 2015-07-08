@@ -6,10 +6,11 @@
 	excludesfile = ~/.gitignore
 [alias]
 	st = status
-	up = log --branches --not --remotes
 	ci = commit
 	br = branch
 	co = checkout
+	up = pull --rebase --prune
+	unpub = log --branches --not --remotes
 	df = diff
 	lg = log --graph --pretty=format:'%Cgreen%h%Creset -%Creset %s%C(yellow)%d %Cblue(%aN, %cr)%Creset' --abbrev-commit --date=relative
         heir = log --all --graph --decorate --oneline --simplify-by-decoration
@@ -20,6 +21,7 @@
 	stashsome = stash --keep-index
 	conflicted = show --cc
 	mg = merge --no-ff
+	bclean = "!f() { git branch --merged ${1-master} | grep -v " ${1-master}$" | xargs -r git branch -d; }; f"
 [color]
 	ui = true
 [push]

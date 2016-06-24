@@ -1,5 +1,5 @@
 [user]
-	name = Kristian Tryggestad 
+	name = Kristian Tryggestad
 	email = kristian.tryggestad@gmail.com
 [core]
 	editor = vim
@@ -9,6 +9,7 @@
 	ci = commit
 	br = branch
 	co = checkout
+	mt = mergetool
 	up = pull --rebase --prune
 	unpub = log --branches --not --remotes
 	df = diff
@@ -22,6 +23,7 @@
 	conflicted = show --cc
 	mg = merge --no-ff
 	bclean = "!f() { git branch --merged ${1-master} | grep -v " ${1-master}$" | xargs -r git branch -d; }; f"
+	blist = "for-each-ref --sort=committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'"
 [color]
 	ui = true
 [push]

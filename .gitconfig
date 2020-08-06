@@ -24,7 +24,7 @@
   ui = true
 [core]
   autocrlf = true
-  editor = 'C:\\Users\\tryggkri\\AppData\\Local\\Programs\\Microsoft VS Code\\bin\\code' --wait
+  editor = code --wait
   excludesfile = ~/.gitignore
 [diff]
   tool = vscode
@@ -46,4 +46,3 @@
   autosquash = true
 [user]
   name = Kristian Tryggestad
-  email = kristian.tryggestad@gmail.com
